@@ -7,8 +7,23 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* to include animations later: */
-	position: relative;
+}
+
+.bubble1,
+.bubble2 {
+	position: absolute;
+}
+
+.bubble1 {
+	overflow: hidden;
+	top: -400px;
+	left: -100px;
+}
+
+.bubble2 {
+	overflow: hidden;
+	bottom: -400px;
+	right: -100px;
 }
 
 .card {
@@ -16,6 +31,8 @@ body {
 	height: 400px;
 	width: 370px;
 	border-radius: 5%;
+	/*put card in front of bubbles: */
+	position: relative;
 }
 
 .div-head {
